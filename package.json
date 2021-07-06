@@ -2,26 +2,52 @@
   "name": "@readme/oas-extensions",
   "description": "A list of extensions that ReadMe has added to extend the OAS spec",
   "version": "13.4.17",
-  "author": "Dom Harrington <dom@harrington-mail.com>",
+  "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/readmeio/api-explorer.git",
-    "directory": "packages/oas-extensions"
+    "url": "git://github.com/readmeio/oas-extensions.git"
   },
   "engines": {
+    "node": "^12 || ^14 || ^16",
     "npm": "^7"
   },
   "scripts": {
     "lint": "eslint .",
-    "pretest": "eslint .",
-    "test": "jest --coverage"
+    "prepare": "husky install",
+    "pretest": "npm run lint",
+    "prettier": "prettier --list-different --write \"./**/**.{js,jsx}\"",
+    "test": "jest --coverage",
+    "version": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@readme/eslint-config": "^4.0.0",
     "@readme/oas-examples": "^4.0.0",
+    "conventional-changelog-cli": "^2.1.1",
     "eslint": "^7.0.0",
+    "husky": "^7.0.1",
     "jest": "^26.6.3",
-    "oas": "^13.0.4"
+    "oas": "^13.0.4",
+    "prettier": "^2.3.2"
+  },
+  "prettier": "@readme/eslint-config/prettier",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "body-max-line-length": [
+        0,
+        "always",
+        "Infinity"
+      ],
+      "footer-max-line-length": [
+        0,
+        "always",
+        "Infinity"
+      ]
+    }
   }
 }
