@@ -21,15 +21,15 @@
     "version": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "@readme/eslint-config": "^5.2.0",
-    "@readme/oas-examples": "^4.0.0",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@readme/eslint-config": "^6.0.0",
+    "@readme/oas-examples": "^4.2.0",
     "conventional-changelog-cli": "^2.1.1",
-    "eslint": "^7.0.0",
+    "eslint": "^7.32.0",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
-    "oas": "^13.0.4",
+    "oas": "^14.0.0",
     "prettier": "^2.3.2"
   },
   "prettier": "@readme/eslint-config/prettier",
