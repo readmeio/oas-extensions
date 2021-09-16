@@ -1,3 +1,15 @@
+## <small>13.6.2 (2021-09-16)</small>
+
+* ci: setting up codeql ([fbe73b1](https://github.com/readmeio/oas-extensions/commit/fbe73b1))
+* chore: removing .github and .husky from the npm pkg ([7a0b618](https://github.com/readmeio/oas-extensions/commit/7a0b618))
+* chore(deps-dev): bump jest from 27.0.6 to 27.1.0 (#9) ([b5f26bc](https://github.com/readmeio/oas-extensions/commit/b5f26bc)), closes [#9](https://github.com/readmeio/oas-extensions/issues/9)
+* chore(deps-dev): bump oas from 14.3.1 to 14.4.0 (#10) ([9e77804](https://github.com/readmeio/oas-extensions/commit/9e77804)), closes [#10](https://github.com/readmeio/oas-extensions/issues/10)
+* chore(deps-dev): bumping dev deps ([4654384](https://github.com/readmeio/oas-extensions/commit/4654384))
+* chore(deps-dev): removing conventional-changelog-cli in favor of npx ([0c6d50a](https://github.com/readmeio/oas-extensions/commit/0c6d50a))
+* docs: adding a security policy ([82b97cc](https://github.com/readmeio/oas-extensions/commit/82b97cc))
+
+
+
 ## <small>13.6.1 (2021-08-26)</small>
 
 * chore: running npm audit ([bb0a20f](https://github.com/readmeio/oas-extensions/commit/bb0a20f))
