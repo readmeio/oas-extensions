@@ -1,6 +1,6 @@
 {
   "name": "@readme/oas-extensions",
-  "description": "A list of extensions that ReadMe has added to extend the OAS spec",
+  "description": "A list of extensions that ReadMe has added to extend the OpenAPI Specification",
   "version": "13.6.2",
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
@@ -21,13 +21,13 @@
     "test": "jest --coverage"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "@readme/eslint-config": "^7.1.1",
-    "@readme/oas-examples": "^4.2.0",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@readme/eslint-config": "^7.2.2",
+    "@readme/oas-examples": "^4.3.2",
     "eslint": "^7.32.0",
-    "husky": "^7.0.1",
-    "jest": "^27.2.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
     "oas": "^14.6.1",
     "prettier": "^2.4.1"
   },

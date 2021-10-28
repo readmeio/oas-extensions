@@ -1,6 +1,6 @@
 # @readme/oas-extensions
 
-A list of extensions that ReadMe has added to extend the OAS spec.
+A list of extensions that ReadMe has added to extend the OpenAPI Specification.
 
 https://docs.readme.com/docs/openapi-extensions
 
