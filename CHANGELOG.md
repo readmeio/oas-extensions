@@ -1,3 +1,23 @@
+## 13.7.0 (2021-10-28)
+
+* chore: removing .github and .husky from the npm pkg ([7a0b618](https://github.com/readmeio/oas-extensions/commit/7a0b618))
+* chore(deps-dev): bump @commitlint/cli from 13.1.0 to 13.2.0 (#13) ([94f31e9](https://github.com/readmeio/oas-extensions/commit/94f31e9)), closes [#13](https://github.com/readmeio/oas-extensions/issues/13)
+* chore(deps-dev): bump @commitlint/config-conventional (#14) ([2a9b7d1](https://github.com/readmeio/oas-extensions/commit/2a9b7d1)), closes [#14](https://github.com/readmeio/oas-extensions/issues/14)
+* chore(deps-dev): bump jest from 27.0.6 to 27.1.0 (#9) ([b5f26bc](https://github.com/readmeio/oas-extensions/commit/b5f26bc)), closes [#9](https://github.com/readmeio/oas-extensions/issues/9)
+* chore(deps-dev): bump jest from 27.2.0 to 27.2.4 (#12) ([c671809](https://github.com/readmeio/oas-extensions/commit/c671809)), closes [#12](https://github.com/readmeio/oas-extensions/issues/12)
+* chore(deps-dev): bump oas from 14.3.1 to 14.4.0 (#10) ([9e77804](https://github.com/readmeio/oas-extensions/commit/9e77804)), closes [#10](https://github.com/readmeio/oas-extensions/issues/10)
+* chore(deps-dev): bumping dev deps ([4654384](https://github.com/readmeio/oas-extensions/commit/4654384))
+* chore(deps-dev): removing conventional-changelog-cli in favor of npx ([0c6d50a](https://github.com/readmeio/oas-extensions/commit/0c6d50a))
+* chore(deps-dev): upgrading dev dependencies ([5566d67](https://github.com/readmeio/oas-extensions/commit/5566d67))
+* chore(deps-dev): upgrading oas to v16 ([88e57a6](https://github.com/readmeio/oas-extensions/commit/88e57a6))
+* chore(deps): bump actions/setup-node from 2.4.0 to 2.4.1 (#11) ([620c3e5](https://github.com/readmeio/oas-extensions/commit/620c3e5)), closes [#11](https://github.com/readmeio/oas-extensions/issues/11)
+* docs: adding a code of conduct ([65d1690](https://github.com/readmeio/oas-extensions/commit/65d1690))
+* docs: adding a security policy ([82b97cc](https://github.com/readmeio/oas-extensions/commit/82b97cc))
+* build: 13.6.2 release ([70d627a](https://github.com/readmeio/oas-extensions/commit/70d627a))
+* ci: setting up codeql ([fbe73b1](https://github.com/readmeio/oas-extensions/commit/fbe73b1))
+
+
+
 ## <small>13.6.2 (2021-09-16)</small>
 
 * ci: setting up codeql ([fbe73b1](https://github.com/readmeio/oas-extensions/commit/fbe73b1))
