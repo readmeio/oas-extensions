@@ -1,6 +1,6 @@
-const extensions = require('..');
-const petstore = require('@readme/oas-examples/3.0/json/petstore.json');
-const Oas = require('oas');
+import * as extensions from '../src';
+import Oas from 'oas';
+import petstore from '@readme/oas-examples/3.0/json/petstore.json';
 
 test.each([
   ['CODE_SAMPLES'],
@@ -18,7 +18,7 @@ test.each([
 describe('#getExtension', () => {
   describe('oas-level extensions', () => {
     it('should use the default extension value if the extension is not present', () => {
-      const oas = new Oas(petstore);
+      const oas = Oas.init(petstore);
       expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).toStrictEqual([
         'curl',
         'node',
@@ -29,7 +29,7 @@ describe('#getExtension', () => {
     });
 
     it('should locate an extensions under `x-readme`', () => {
-      const oas = new Oas({
+      const oas = Oas.init({
         ...petstore,
         'x-readme': {
           [extensions.SAMPLES_LANGUAGES]: ['swift'],
@@ -40,13 +40,13 @@ describe('#getExtension', () => {
     });
 
     it('should locate an extensions listed at the root', () => {
-      const oas = new Oas({ ...petstore, [`x-${extensions.EXPLORER_ENABLED}`]: false });
+      const oas = Oas.init({ ...petstore, [`x-${extensions.EXPLORER_ENABLED}`]: false });
       expect(extensions.getExtension(extensions.EXPLORER_ENABLED, oas)).toBe(false);
     });
   });
 
   describe('operation-level', () => {
-    const oas = new Oas(petstore);
+    const oas = Oas.init(petstore);
 
     it('should use the default extension value if the extension is not present', () => {
       const operation = oas.operation('/pet', 'post');
@@ -81,15 +81,15 @@ describe('#getExtension', () => {
 describe('#isExtensionValid()', () => {
   it('should validate that `x-readme` is an object', () => {
     expect(() => {
-      extensions.validateExtension(extensions.EXPLORER_ENABLED, { 'x-readme': [] });
+      extensions.validateExtension(extensions.EXPLORER_ENABLED, Oas.init({ 'x-readme': [] }));
     }).toThrow(/must be of type "Object"/);
 
     expect(() => {
-      extensions.validateExtension(extensions.EXPLORER_ENABLED, { 'x-readme': false });
+      extensions.validateExtension(extensions.EXPLORER_ENABLED, Oas.init({ 'x-readme': false }));
     }).toThrow(/must be of type "Object"/);
 
     expect(() => {
-      extensions.validateExtension(extensions.EXPLORER_ENABLED, { 'x-readme': null });
+      extensions.validateExtension(extensions.EXPLORER_ENABLED, Oas.init({ 'x-readme': null }));
     }).toThrow(/must be of type "Object"/);
   });
 
@@ -106,17 +106,20 @@ describe('#isExtensionValid()', () => {
     describe('should allow valid extensions', () => {
       it('should allow at the root level', () => {
         expect(() => {
-          extensions.validateExtension(extensions[extension], { [`x-${extensions[extension]}`]: validValue });
+          extensions.validateExtension(extensions[extension], Oas.init({ [`x-${extensions[extension]}`]: validValue }));
         }).not.toThrow();
       });
 
       it('should allow if nested in `x-readme`', () => {
         expect(() => {
-          extensions.validateExtension(extensions[extension], {
-            'x-readme': {
-              [extensions[extension]]: validValue,
-            },
-          });
+          extensions.validateExtension(
+            extensions[extension],
+            Oas.init({
+              'x-readme': {
+                [extensions[extension]]: validValue,
+              },
+            })
+          );
         }).not.toThrow();
       });
     });
@@ -124,17 +127,23 @@ describe('#isExtensionValid()', () => {
     describe('should fail on invalid extension values', () => {
       it('should error if at the root level', () => {
         expect(() => {
-          extensions.validateExtension(extensions[extension], { [`x-${extensions[extension]}`]: invalidValue });
+          extensions.validateExtension(
+            extensions[extension],
+            Oas.init({ [`x-${extensions[extension]}`]: invalidValue })
+          );
         }).toThrow(new RegExp(`"x-${extensions[extension]}" must be of type "${expectedType}"`));
       });
 
       it('should error if nested in `x-readme`', () => {
         expect(() => {
-          extensions.validateExtension(extensions[extension], {
-            'x-readme': {
-              [extensions[extension]]: invalidValue,
-            },
-          });
+          extensions.validateExtension(
+            extensions[extension],
+            Oas.init({
+              'x-readme': {
+                [extensions[extension]]: invalidValue,
+              },
+            })
+          );
         }).toThrow(new RegExp(`"x-readme.${extensions[extension]}" must be of type "${expectedType}"`));
       });
     });
