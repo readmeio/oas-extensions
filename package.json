@@ -17,6 +17,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .js,.ts",
+    "prebuild": "rm -rf dist/ @types/",
     "prepack": "npm run build",
     "prepare": "husky install",
     "pretest": "npm run lint",
