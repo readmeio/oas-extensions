@@ -4,6 +4,8 @@
   "version": "13.7.0",
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
+  "main": "dist/index.js",
+  "types": "@types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/readmeio/oas-extensions.git"
