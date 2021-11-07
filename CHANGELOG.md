@@ -1,3 +1,13 @@
+## 14.0.0 (2021-11-07)
+
+* feat: rewriting the library in typescript and upgrading `oas` (#19) ([ff2c803](https://github.com/readmeio/oas-extensions/commit/ff2c803)), closes [#19](https://github.com/readmeio/oas-extensions/issues/19)
+* chore(deps-dev): bump @commitlint/cli from 13.2.1 to 14.1.0 (#17) ([57130e9](https://github.com/readmeio/oas-extensions/commit/57130e9)), closes [#17](https://github.com/readmeio/oas-extensions/issues/17)
+* chore(deps-dev): bump @commitlint/config-conventional (#18) ([4447cbf](https://github.com/readmeio/oas-extensions/commit/4447cbf)), closes [#18](https://github.com/readmeio/oas-extensions/issues/18)
+* chore(deps-dev): bump oas from 16.0.0 to 16.0.4 (#16) ([ee6a018](https://github.com/readmeio/oas-extensions/commit/ee6a018)), closes [#16](https://github.com/readmeio/oas-extensions/issues/16)
+* chore(deps): bump actions/checkout from 2.3.4 to 2.3.5 (#15) ([b77b983](https://github.com/readmeio/oas-extensions/commit/b77b983)), closes [#15](https://github.com/readmeio/oas-extensions/issues/15)
+
+
+
 ## 13.7.0 (2021-10-28)
 
 * chore: removing .github and .husky from the npm pkg ([7a0b618](https://github.com/readmeio/oas-extensions/commit/7a0b618))
