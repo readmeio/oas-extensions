@@ -1,3 +1,10 @@
+## <small>14.0.1 (2021-11-20)</small>
+
+* feat: improved error handling when extensions aren't found ([c49b368](https://github.com/readmeio/oas-extensions/commit/c49b368))
+* chore: cleaning out the dist and types dirs before builds ([8d2d624](https://github.com/readmeio/oas-extensions/commit/8d2d624))
+
+
+
 ## 14.0.0 (2021-11-07)
 
 * feat: rewriting the library in typescript and upgrading `oas` (#19) ([ff2c803](https://github.com/readmeio/oas-extensions/commit/ff2c803)), closes [#19](https://github.com/readmeio/oas-extensions/issues/19)
