@@ -16,6 +16,17 @@ test.each([
 });
 
 describe('#getExtension', () => {
+  it("should not throw an exception if `Oas` doesn't have an API definition", () => {
+    const oas = Oas.init(undefined);
+    expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).toHaveLength(5);
+  });
+
+  it("should not throw an exception if `Operation` doesn't have an API definition", () => {
+    const oas = Oas.init(undefined);
+    const operation = oas.operation('/pet', 'post');
+    expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas, operation)).toHaveLength(5);
+  });
+
   describe('oas-level extensions', () => {
     it('should use the default extension value if the extension is not present', () => {
       const oas = Oas.init(petstore);
@@ -42,6 +53,15 @@ describe('#getExtension', () => {
     it('should locate an extensions listed at the root', () => {
       const oas = Oas.init({ ...petstore, [`x-${extensions.EXPLORER_ENABLED}`]: false });
       expect(extensions.getExtension(extensions.EXPLORER_ENABLED, oas)).toBe(false);
+    });
+
+    it('should not throw if `x-readme` is not an object', () => {
+      const oas = Oas.init({
+        ...petstore,
+        'x-readme': true,
+      });
+
+      expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).toHaveLength(5);
     });
   });
 
@@ -74,6 +94,13 @@ describe('#getExtension', () => {
       operation.schema[`x-${extensions.EXPLORER_ENABLED}`] = false;
 
       expect(extensions.getExtension(extensions.EXPLORER_ENABLED, oas, operation)).toBe(false);
+    });
+
+    it('should not throw if `x-readme` is not an object', () => {
+      const operation = oas.operation('/pet', 'post');
+      operation.schema['x-readme'] = true;
+
+      expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).toHaveLength(5);
     });
   });
 });

@@ -56,7 +56,7 @@ export function getExtension(extension: keyof Extensions, oas: Oas, operation?: 
   if (operation) {
     if (operation.hasExtension('x-readme')) {
       const data = operation.getExtension('x-readme') as Extensions;
-      if (extension in data) {
+      if (data && typeof data === 'object' && extension in data) {
         return data[extension];
       }
     }
@@ -68,7 +68,7 @@ export function getExtension(extension: keyof Extensions, oas: Oas, operation?: 
 
   if (oas.hasExtension('x-readme')) {
     const data = oas.getExtension('x-readme') as Extensions;
-    if (extension in data) {
+    if (data && typeof data === 'object' && extension in data) {
       return data[extension];
     }
   }
