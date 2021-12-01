@@ -1,3 +1,16 @@
+## <small>14.0.2 (2021-12-01)</small>
+
+* chore(deps-dev): bump @commitlint/cli from 14.1.0 to 15.0.0 (#25) ([9582c9c](https://github.com/readmeio/oas-extensions/commit/9582c9c)), closes [#25](https://github.com/readmeio/oas-extensions/issues/25)
+* chore(deps-dev): bump @commitlint/config-conventional (#23) ([28b0e8c](https://github.com/readmeio/oas-extensions/commit/28b0e8c)), closes [#23](https://github.com/readmeio/oas-extensions/issues/23)
+* chore(deps-dev): bump @types/jest from 27.0.2 to 27.0.3 (#26) ([d2c0d3e](https://github.com/readmeio/oas-extensions/commit/d2c0d3e)), closes [#26](https://github.com/readmeio/oas-extensions/issues/26)
+* chore(deps-dev): bump jest from 27.3.1 to 27.4.3 (#24) ([ac05b24](https://github.com/readmeio/oas-extensions/commit/ac05b24)), closes [#24](https://github.com/readmeio/oas-extensions/issues/24)
+* chore(deps-dev): bump prettier from 2.4.1 to 2.5.0 (#27) ([0a1085b](https://github.com/readmeio/oas-extensions/commit/0a1085b)), closes [#27](https://github.com/readmeio/oas-extensions/issues/27)
+* chore(deps-dev): bump typescript from 4.4.4 to 4.5.2 (#22) ([2b93aaf](https://github.com/readmeio/oas-extensions/commit/2b93aaf)), closes [#22](https://github.com/readmeio/oas-extensions/issues/22)
+* chore(deps): bump actions/checkout from 2.3.5 to 2.4.0 (#20) ([476d5a6](https://github.com/readmeio/oas-extensions/commit/476d5a6)), closes [#20](https://github.com/readmeio/oas-extensions/issues/20)
+* chore(deps): bump actions/setup-node from 2.4.1 to 2.5.0 (#21) ([b8655a4](https://github.com/readmeio/oas-extensions/commit/b8655a4)), closes [#21](https://github.com/readmeio/oas-extensions/issues/21)
+
+
+
 ## <small>14.0.1 (2021-11-20)</small>
 
 * feat: improved error handling when extensions aren't found ([c49b368](https://github.com/readmeio/oas-extensions/commit/c49b368))
