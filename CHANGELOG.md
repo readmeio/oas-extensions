@@ -1,3 +1,10 @@
+## <small>14.0.3 (2021-12-14)</small>
+
+* chore(deps-dev): upgrading eslint and our code standards (#29) ([898eccc](https://github.com/readmeio/oas-extensions/commit/898eccc)), closes [#29](https://github.com/readmeio/oas-extensions/issues/29)
+* feat: loosening up the npm engine requirements to easily allow npm@8 (#28) ([8e66b4f](https://github.com/readmeio/oas-extensions/commit/8e66b4f)), closes [#28](https://github.com/readmeio/oas-extensions/issues/28)
+
+
+
 ## <small>14.0.2 (2021-12-01)</small>
 
 * chore(deps-dev): bump @commitlint/cli from 14.1.0 to 15.0.0 (#25) ([9582c9c](https://github.com/readmeio/oas-extensions/commit/9582c9c)), closes [#25](https://github.com/readmeio/oas-extensions/issues/25)
