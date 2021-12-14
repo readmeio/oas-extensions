@@ -17,9 +17,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Node 12 still ships with npm@6 so for compatibility reasons we're upping this.
+      # Node 16 still ships with npm@8 so for compatibility reasons we're upping this for everything else.
       - name: Install npm@8
-        if: matrix.node-version == '12.x'
+        if: matrix.node-version != '16.x'
         run: npm install -g npm@8
 
       - name: Install deps
