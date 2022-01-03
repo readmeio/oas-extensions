@@ -1,3 +1,18 @@
+## <small>14.0.4 (2022-01-03)</small>
+
+* chore(deps-dev): bump @commitlint/cli from 15.0.0 to 16.0.1 (#37) ([f6462bc](https://github.com/readmeio/oas-extensions/commit/f6462bc)), closes [#37](https://github.com/readmeio/oas-extensions/issues/37)
+* chore(deps-dev): bump @commitlint/config-conventional (#32) ([9400e35](https://github.com/readmeio/oas-extensions/commit/9400e35)), closes [#32](https://github.com/readmeio/oas-extensions/issues/32)
+* chore(deps-dev): bump @readme/eslint-config from 8.0.4 to 8.1.1 (#36) ([b893cd5](https://github.com/readmeio/oas-extensions/commit/b893cd5)), closes [#36](https://github.com/readmeio/oas-extensions/issues/36)
+* chore(deps-dev): bump @types/jest from 27.0.3 to 27.4.0 (#33) ([54f73da](https://github.com/readmeio/oas-extensions/commit/54f73da)), closes [#33](https://github.com/readmeio/oas-extensions/issues/33)
+* chore(deps-dev): bump eslint from 8.4.1 to 8.6.0 (#38) ([93e644a](https://github.com/readmeio/oas-extensions/commit/93e644a)), closes [#38](https://github.com/readmeio/oas-extensions/issues/38)
+* chore(deps-dev): bump jest from 27.4.3 to 27.4.5 (#31) ([1e1a6c5](https://github.com/readmeio/oas-extensions/commit/1e1a6c5)), closes [#31](https://github.com/readmeio/oas-extensions/issues/31)
+* chore(deps-dev): bump prettier from 2.5.0 to 2.5.1 (#34) ([84ee605](https://github.com/readmeio/oas-extensions/commit/84ee605)), closes [#34](https://github.com/readmeio/oas-extensions/issues/34)
+* chore(deps-dev): bump ts-jest from 27.0.7 to 27.1.2 (#39) ([504edcb](https://github.com/readmeio/oas-extensions/commit/504edcb)), closes [#39](https://github.com/readmeio/oas-extensions/issues/39)
+* chore(deps-dev): bump typescript from 4.5.2 to 4.5.4 (#35) ([d146789](https://github.com/readmeio/oas-extensions/commit/d146789)), closes [#35](https://github.com/readmeio/oas-extensions/issues/35)
+* chore(deps): bump actions/setup-node from 2.5.0 to 2.5.1 (#30) ([6f0574c](https://github.com/readmeio/oas-extensions/commit/6f0574c)), closes [#30](https://github.com/readmeio/oas-extensions/issues/30)
+
+
+
 ## <small>14.0.3 (2021-12-14)</small>
 
 * chore(deps-dev): upgrading eslint and our code standards (#29) ([898eccc](https://github.com/readmeio/oas-extensions/commit/898eccc)), closes [#29](https://github.com/readmeio/oas-extensions/issues/29)
