@@ -66,6 +66,12 @@ export function getExtension(extension: keyof Extensions, oas: Oas, operation?: 
     }
   }
 
+  // Because our `code-samples` extension is intended for operation-level use, if it's instead placed at the OAS-level
+  // we should ignore it.
+  if (extension === CODE_SAMPLES) {
+    return defaults[extension];
+  }
+
   if (oas.hasExtension('x-readme')) {
     const data = oas.getExtension('x-readme') as Extensions;
     if (data && typeof data === 'object' && extension in data) {
