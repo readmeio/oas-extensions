@@ -1,3 +1,9 @@
+## 14.1.0 (2022-01-21)
+
+* fix: ignore the `code-samples` extension if placed at the root level (#40) ([200ada9](https://github.com/readmeio/oas-extensions/commit/200ada9)), closes [#40](https://github.com/readmeio/oas-extensions/issues/40)
+
+
+
 ## <small>14.0.4 (2022-01-03)</small>
 
 * chore(deps-dev): bump @commitlint/cli from 15.0.0 to 16.0.1 (#37) ([f6462bc](https://github.com/readmeio/oas-extensions/commit/f6462bc)), closes [#37](https://github.com/readmeio/oas-extensions/issues/37)
