@@ -63,6 +63,23 @@ describe('#getExtension', () => {
 
       expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).toHaveLength(5);
     });
+
+    it('should not pick up the `code-samples` extension', () => {
+      const oas = Oas.init({
+        ...petstore,
+        'x-readme': {
+          [extensions.CODE_SAMPLES]: [
+            {
+              name: 'Custom cURL snippet',
+              language: 'curl',
+              code: 'curl -X POST https://api.example.com/v2/alert',
+            },
+          ],
+        },
+      });
+
+      expect(extensions.getExtension(extensions.CODE_SAMPLES, oas)).toBeUndefined();
+    });
   });
 
   describe('operation-level', () => {
