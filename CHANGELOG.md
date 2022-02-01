@@ -1,3 +1,16 @@
+## <small>14.1.1 (2022-02-01)</small>
+
+* chore(deps-dev): bump @commitlint/cli from 16.0.1 to 16.1.0 (#47) ([44a506d](https://github.com/readmeio/oas-extensions/commit/44a506d)), closes [#47](https://github.com/readmeio/oas-extensions/issues/47)
+* chore(deps-dev): bump @readme/eslint-config from 8.1.1 to 8.2.0 (#42) ([0a82592](https://github.com/readmeio/oas-extensions/commit/0a82592)), closes [#42](https://github.com/readmeio/oas-extensions/issues/42)
+* chore(deps-dev): bump @readme/oas-examples from 4.3.2 to 4.4.0 (#44) ([34ee400](https://github.com/readmeio/oas-extensions/commit/34ee400)), closes [#44](https://github.com/readmeio/oas-extensions/issues/44)
+* chore(deps-dev): bump eslint from 8.6.0 to 8.8.0 (#46) ([bd2d6bf](https://github.com/readmeio/oas-extensions/commit/bd2d6bf)), closes [#46](https://github.com/readmeio/oas-extensions/issues/46)
+* chore(deps-dev): bump jest from 27.4.5 to 27.4.7 (#41) ([5ebacc6](https://github.com/readmeio/oas-extensions/commit/5ebacc6)), closes [#41](https://github.com/readmeio/oas-extensions/issues/41)
+* chore(deps-dev): bump ts-jest from 27.1.2 to 27.1.3 (#43) ([b9ba113](https://github.com/readmeio/oas-extensions/commit/b9ba113)), closes [#43](https://github.com/readmeio/oas-extensions/issues/43)
+* chore(deps-dev): bump typescript from 4.5.4 to 4.5.5 (#45) ([003af19](https://github.com/readmeio/oas-extensions/commit/003af19)), closes [#45](https://github.com/readmeio/oas-extensions/issues/45)
+* chore(deps): bump node-fetch from 2.6.6 to 2.6.7 (#48) ([c42fc54](https://github.com/readmeio/oas-extensions/commit/c42fc54)), closes [#48](https://github.com/readmeio/oas-extensions/issues/48)
+
+
+
 ## 14.1.0 (2022-01-21)
 
 * fix: ignore the `code-samples` extension if placed at the root level (#40) ([200ada9](https://github.com/readmeio/oas-extensions/commit/200ada9)), closes [#40](https://github.com/readmeio/oas-extensions/issues/40)
