@@ -19,7 +19,7 @@ export type Extensions = {
     name?: string;
   };
   [EXPLORER_ENABLED]: boolean;
-  [HEADERS]: { [key: string]: string | number }[];
+  [HEADERS]: Record<string, string | number>[];
   [PROXY_ENABLED]: boolean;
   [SAMPLES_ENABLED]: boolean; // @deprecated
   [SAMPLES_LANGUAGES]: string[];
