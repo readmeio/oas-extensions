@@ -1,3 +1,11 @@
+## 14.2.0 (2022-03-08)
+
+* docs: integrating alex into our documentation workflow (#58) ([22a57e3](https://github.com/readmeio/oas-extensions/commit/22a57e3)), closes [#58](https://github.com/readmeio/oas-extensions/issues/58)
+* chore(deps): bump actions/setup-node from 2.5.1 to 3 (#49) ([900bdac](https://github.com/readmeio/oas-extensions/commit/900bdac)), closes [#49](https://github.com/readmeio/oas-extensions/issues/49)
+* chore(deps): upgrading out of date deps (#57) ([2017355](https://github.com/readmeio/oas-extensions/commit/2017355)), closes [#57](https://github.com/readmeio/oas-extensions/issues/57)
+
+
+
 ## <small>14.1.1 (2022-02-01)</small>
 
 * chore(deps-dev): bump @commitlint/cli from 16.0.1 to 16.1.0 (#47) ([44a506d](https://github.com/readmeio/oas-extensions/commit/44a506d)), closes [#47](https://github.com/readmeio/oas-extensions/issues/47)
