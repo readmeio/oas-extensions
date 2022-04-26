@@ -1,3 +1,12 @@
+## 14.3.0 (2022-04-26)
+
+* ci: moving tests over to mocha, fixing node 18 compat issues (#70) ([f51f16e](https://github.com/readmeio/oas-extensions/commit/f51f16e)), closes [#70](https://github.com/readmeio/oas-extensions/issues/70)
+* chore: docs cleanup (#69) ([bbbee1b](https://github.com/readmeio/oas-extensions/commit/bbbee1b)), closes [#69](https://github.com/readmeio/oas-extensions/issues/69)
+* chore(deps-dev): bumping dev deps (#68) ([aaa6bd3](https://github.com/readmeio/oas-extensions/commit/aaa6bd3)), closes [#68](https://github.com/readmeio/oas-extensions/issues/68)
+* chore(deps): bump minimist from 1.2.5 to 1.2.6 (#59) ([d53e921](https://github.com/readmeio/oas-extensions/commit/d53e921)), closes [#59](https://github.com/readmeio/oas-extensions/issues/59)
+
+
+
 ## 14.2.0 (2022-03-08)
 
 * docs: integrating alex into our documentation workflow (#58) ([22a57e3](https://github.com/readmeio/oas-extensions/commit/22a57e3)), closes [#58](https://github.com/readmeio/oas-extensions/issues/58)

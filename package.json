@@ -1,7 +1,7 @@
 {
   "name": "@readme/oas-extensions",
   "description": "A list of extensions that ReadMe has added to extend the OpenAPI Specification",
-  "version": "14.2.0",
+  "version": "14.3.0",
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
   "main": "dist/index.js",
