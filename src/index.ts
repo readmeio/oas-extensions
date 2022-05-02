@@ -39,10 +39,11 @@ export const defaults: Extensions = {
 };
 
 /**
- * With one of our custom OpenAPI extensions, look for it in either an instance of `oas` or an instance of the
- * `Operation` class in `oas`.
+ * With one of our custom OpenAPI extensions, look for it in either an instance of `oas` or an
+ * instance of the `Operation` class in `oas`.
  *
- * Our custom extensions can either be nestled inside of an `x-readme` object or at the root level with an `x-` prefix.
+ * Our custom extensions can either be nestled inside of an `x-readme` object or at the root level
+ * with an `x-` prefix.
  *
  * @see {@link https://npm.im/oas}
  * @see {@link https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md#specificationExtensions}
@@ -66,8 +67,8 @@ export function getExtension(extension: keyof Extensions, oas: Oas, operation?: 
     }
   }
 
-  // Because our `code-samples` extension is intended for operation-level use, if it's instead placed at the OAS-level
-  // we should ignore it.
+  // Because our `code-samples` extension is intended for operation-level use, if it's instead
+  // placed at the OAS-level we should ignore it.
   if (extension === CODE_SAMPLES) {
     return defaults[extension];
   }
