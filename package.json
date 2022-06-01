@@ -29,7 +29,7 @@
     "oas": "^17.1.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
+    "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@readme/eslint-config": "^8.7.2",
     "@readme/oas-examples": "^5.1.1",
