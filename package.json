@@ -5,7 +5,7 @@
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
   "main": "dist/index.js",
-  "types": "@types/index.d.ts",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/readmeio/oas-extensions.git"
@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .js,.ts",
-    "prebuild": "rm -rf dist/ @types/",
+    "prebuild": "rm -rf dist/",
     "prepack": "npm run build",
     "prepare": "husky install",
     "pretest": "npm run lint",
