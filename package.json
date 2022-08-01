@@ -1,7 +1,7 @@
 {
   "name": "@readme/oas-extensions",
   "description": "A list of extensions that ReadMe has added to extend the OpenAPI Specification",
-  "version": "14.3.0",
+  "version": "14.4.0",
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
   "main": "dist/index.js",
@@ -22,8 +22,7 @@
     "pretest": "npm run lint",
     "prettier": "prettier --list-different --write \"./**/**.{js,ts}\"",
     "release": "npx conventional-changelog-cli -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "test": "nyc mocha \"test/**/*.test.ts\"",
-    "test:only": "nyc mocha \"test/**/*.test.ts\""
+    "test": "nyc mocha \"test/**/*.test.ts\""
   },
   "peerDependencies": {
     "oas": "^17.1.0 || ^18.0.0"
