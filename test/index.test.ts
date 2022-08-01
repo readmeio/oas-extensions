@@ -23,24 +23,26 @@ describe('oas-extensions', function () {
   describe('#getExtension', function () {
     it("should not throw an exception if `Oas` doesn't have an API definition", function () {
       const oas = Oas.init(undefined);
-      expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).to.have.length(5);
+      expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).to.have.length(7);
     });
 
     it("should not throw an exception if `Operation` doesn't have an API definition", function () {
       const oas = Oas.init(undefined);
       const operation = oas.operation('/pet', 'post');
-      expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas, operation)).to.have.length(5);
+      expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas, operation)).to.have.length(7);
     });
 
     describe('oas-level extensions', function () {
       it('should use the default extension value if the extension is not present', function () {
         const oas = Oas.init(petstore);
         expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).to.deep.equal([
-          'curl',
+          'shell',
           'node',
           'ruby',
           'php',
           'python',
+          'java',
+          'csharp',
         ]);
       });
 
@@ -66,7 +68,7 @@ describe('oas-extensions', function () {
           'x-readme': true,
         });
 
-        expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).to.have.length(5);
+        expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).to.have.length(7);
       });
 
       it('should not pick up the `code-samples` extension', function () {
@@ -98,11 +100,13 @@ describe('oas-extensions', function () {
         const operation = oas.operation('/pet', 'post');
 
         expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas, operation)).to.deep.equal([
-          'curl',
+          'shell',
           'node',
           'ruby',
           'php',
           'python',
+          'java',
+          'csharp',
         ]);
       });
 
@@ -126,7 +130,7 @@ describe('oas-extensions', function () {
         const operation = oas.operation('/pet', 'post');
         operation.schema['x-readme'] = true;
 
-        expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).to.have.length(5);
+        expect(extensions.getExtension(extensions.SAMPLES_LANGUAGES, oas)).to.have.length(7);
       });
     });
   });

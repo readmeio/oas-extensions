@@ -33,7 +33,7 @@ export const defaults: Extensions = {
   [HEADERS]: undefined,
   [PROXY_ENABLED]: true,
   [SAMPLES_ENABLED]: true,
-  [SAMPLES_LANGUAGES]: ['curl', 'node', 'ruby', 'php', 'python'],
+  [SAMPLES_LANGUAGES]: ['shell', 'node', 'ruby', 'php', 'python', 'java', 'csharp'],
   [SEND_DEFAULTS]: false,
   [SIMPLE_MODE]: true,
 };
