@@ -1,8 +1,9 @@
 /* eslint-disable mocha/no-setup-in-describe */
-import * as extensions from '../src';
+import petstore from '@readme/oas-examples/3.0/json/petstore.json';
 import { expect } from 'chai';
 import Oas from 'oas';
-import petstore from '@readme/oas-examples/3.0/json/petstore.json';
+
+import * as extensions from '../src';
 
 describe('oas-extensions', function () {
   [
