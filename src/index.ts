@@ -17,6 +17,7 @@ export type Extensions = {
     language: string;
     code: string;
     name?: string;
+    install?: string;
   };
   [EXPLORER_ENABLED]: boolean;
   [HEADERS]: Record<string, string | number>[];

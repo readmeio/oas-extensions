@@ -152,7 +152,19 @@ describe('oas-extensions', function () {
     });
 
     [
-      ['CODE_SAMPLES', [], false, 'Array'],
+      [
+        'CODE_SAMPLES',
+        [
+          {
+            name: 'Custom cURL snippet',
+            language: 'curl',
+            code: 'curl -X POST https://api.example.com/v2/alert',
+            install: 'brew install curl',
+          },
+        ],
+        false,
+        'Array',
+      ],
       ['EXPLORER_ENABLED', true, 'false', 'Boolean'],
       ['HEADERS', [{ key: 'X-API-Key', value: 'abc123' }], false, 'Array'],
       ['PROXY_ENABLED', true, 'yes', 'Boolean'],
