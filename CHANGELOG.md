@@ -1,3 +1,18 @@
+## 15.0.0 (2022-09-13)
+
+* feat: adding a new `metrics-enabled` extension (#104) ([9b75601](https://github.com/readmeio/oas-extensions/commit/9b75601)), closes [#104](https://github.com/readmeio/oas-extensions/issues/104)
+* feat: adding an optional `install` property to the code samples extension (#105) ([757de13](https://github.com/readmeio/oas-extensions/commit/757de13)), closes [#105](https://github.com/readmeio/oas-extensions/issues/105)
+* chore(deps-dev): bump @commitlint/cli from 17.0.3 to 17.1.2 (#99) ([27a903c](https://github.com/readmeio/oas-extensions/commit/27a903c)), closes [#99](https://github.com/readmeio/oas-extensions/issues/99)
+* chore(deps-dev): bump @commitlint/config-conventional (#98) ([348dee4](https://github.com/readmeio/oas-extensions/commit/348dee4)), closes [#98](https://github.com/readmeio/oas-extensions/issues/98)
+* chore(deps-dev): bump @readme/eslint-config from 9.0.0 to 10.1.0 (#103) ([b032951](https://github.com/readmeio/oas-extensions/commit/b032951)), closes [#103](https://github.com/readmeio/oas-extensions/issues/103)
+* chore(deps-dev): bump @types/chai from 4.3.1 to 4.3.3 (#102) ([c2fe205](https://github.com/readmeio/oas-extensions/commit/c2fe205)), closes [#102](https://github.com/readmeio/oas-extensions/issues/102)
+* chore(deps-dev): bump eslint from 8.21.0 to 8.23.0 (#101) ([7688cdf](https://github.com/readmeio/oas-extensions/commit/7688cdf)), closes [#101](https://github.com/readmeio/oas-extensions/issues/101)
+* chore(deps-dev): bump typescript from 4.7.4 to 4.8.2 (#100) ([8177e4c](https://github.com/readmeio/oas-extensions/commit/8177e4c)), closes [#100](https://github.com/readmeio/oas-extensions/issues/100)
+* chore(deps-dev): bumping dev deps ([8e45308](https://github.com/readmeio/oas-extensions/commit/8e45308))
+* fix: ci ([34603a7](https://github.com/readmeio/oas-extensions/commit/34603a7))
+
+
+
 ## 14.4.0 (2022-08-01)
 
 * fix: shipping TS types in `dist/` instead of in `@types/` ([bc36e60](https://github.com/readmeio/oas-extensions/commit/bc36e60))
