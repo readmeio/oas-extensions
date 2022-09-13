@@ -10,6 +10,7 @@ describe('oas-extensions', function () {
     'CODE_SAMPLES',
     'EXPLORER_ENABLED',
     'HEADERS',
+    'METRICS_DISABLED',
     'PROXY_ENABLED',
     'SAMPLES_ENABLED',
     'SAMPLES_LANGUAGES',
@@ -17,7 +18,7 @@ describe('oas-extensions', function () {
     'SIMPLE_MODE',
   ].forEach(extension => {
     it(`\`${extension}\` extension should have a default value`, function () {
-      expect(extensions[extension] in extensions.defaults).to.be.true;
+      expect(extensions.defaults).to.have.property(extensions[extension]);
     });
   });
 
@@ -156,6 +157,7 @@ describe('oas-extensions', function () {
       ['EXPLORER_ENABLED', true, 'false', 'Boolean'],
       ['HEADERS', [{ key: 'X-API-Key', value: 'abc123' }], false, 'Array'],
       ['PROXY_ENABLED', true, 'yes', 'Boolean'],
+      ['METRICS_DISABLED', true, 'yes', 'Boolean'],
       ['SAMPLES_ENABLED', true, 'no', 'Boolean'],
       ['SAMPLES_LANGUAGES', ['swift'], {}, 'Array'],
       ['SEND_DEFAULTS', true, 'absolutely not', 'Boolean'],
