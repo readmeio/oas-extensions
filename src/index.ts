@@ -4,7 +4,7 @@ import type { default as Oas, Operation } from 'oas';
 export const CODE_SAMPLES = 'code-samples';
 export const EXPLORER_ENABLED = 'explorer-enabled';
 export const HEADERS = 'headers';
-export const METRICS_DISABLED = 'metrics-disabled';
+export const METRICS_ENABLED = 'metrics-enabled';
 export const PROXY_ENABLED = 'proxy-enabled';
 export const SAMPLES_ENABLED = 'samples-enabled';
 export const SAMPLES_LANGUAGES = 'samples-languages';
@@ -21,7 +21,7 @@ export type Extensions = {
   };
   [EXPLORER_ENABLED]: boolean;
   [HEADERS]: Record<string, string | number>[];
-  [METRICS_DISABLED]: boolean;
+  [METRICS_ENABLED]: boolean;
   [PROXY_ENABLED]: boolean;
   [SAMPLES_ENABLED]: boolean; // @deprecated
   [SAMPLES_LANGUAGES]: string[];
@@ -33,7 +33,7 @@ export const defaults: Extensions = {
   [CODE_SAMPLES]: undefined,
   [EXPLORER_ENABLED]: true,
   [HEADERS]: undefined,
-  [METRICS_DISABLED]: false,
+  [METRICS_ENABLED]: true,
   [PROXY_ENABLED]: true,
   [SAMPLES_ENABLED]: true,
   [SAMPLES_LANGUAGES]: ['shell', 'node', 'ruby', 'php', 'python', 'java', 'csharp'],
