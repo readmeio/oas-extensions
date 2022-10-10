@@ -1,3 +1,25 @@
+## 16.0.0 (2022-10-10)
+
+* chore(deps-dev): bump @commitlint/cli from 17.0.3 to 17.1.2 (#99) ([27a903c](https://github.com/readmeio/oas-extensions/commit/27a903c)), closes [#99](https://github.com/readmeio/oas-extensions/issues/99)
+* chore(deps-dev): bump @commitlint/config-conventional (#98) ([348dee4](https://github.com/readmeio/oas-extensions/commit/348dee4)), closes [#98](https://github.com/readmeio/oas-extensions/issues/98)
+* chore(deps-dev): bump @readme/eslint-config from 9.0.0 to 10.1.0 (#103) ([b032951](https://github.com/readmeio/oas-extensions/commit/b032951)), closes [#103](https://github.com/readmeio/oas-extensions/issues/103)
+* chore(deps-dev): bump @readme/oas-examples from 5.6.0 to 5.7.0 (#106) ([d9be12b](https://github.com/readmeio/oas-extensions/commit/d9be12b)), closes [#106](https://github.com/readmeio/oas-extensions/issues/106)
+* chore(deps-dev): bump @types/chai from 4.3.1 to 4.3.3 (#102) ([c2fe205](https://github.com/readmeio/oas-extensions/commit/c2fe205)), closes [#102](https://github.com/readmeio/oas-extensions/issues/102)
+* chore(deps-dev): bump @types/mocha from 9.1.1 to 10.0.0 (#109) ([83b3fe2](https://github.com/readmeio/oas-extensions/commit/83b3fe2)), closes [#109](https://github.com/readmeio/oas-extensions/issues/109)
+* chore(deps-dev): bump eslint from 8.21.0 to 8.23.0 (#101) ([7688cdf](https://github.com/readmeio/oas-extensions/commit/7688cdf)), closes [#101](https://github.com/readmeio/oas-extensions/issues/101)
+* chore(deps-dev): bump eslint from 8.23.1 to 8.24.0 (#108) ([983a0c9](https://github.com/readmeio/oas-extensions/commit/983a0c9)), closes [#108](https://github.com/readmeio/oas-extensions/issues/108)
+* chore(deps-dev): bump typescript from 4.7.4 to 4.8.2 (#100) ([8177e4c](https://github.com/readmeio/oas-extensions/commit/8177e4c)), closes [#100](https://github.com/readmeio/oas-extensions/issues/100)
+* chore(deps-dev): bump typescript from 4.8.3 to 4.8.4 (#107) ([f931c7f](https://github.com/readmeio/oas-extensions/commit/f931c7f)), closes [#107](https://github.com/readmeio/oas-extensions/issues/107)
+* chore(deps-dev): bumping dev deps ([8e45308](https://github.com/readmeio/oas-extensions/commit/8e45308))
+* chore(deps-dev): bumping out of date dev deps ([0817d3c](https://github.com/readmeio/oas-extensions/commit/0817d3c))
+* feat: adding a new `metrics-enabled` extension (#104) ([9b75601](https://github.com/readmeio/oas-extensions/commit/9b75601)), closes [#104](https://github.com/readmeio/oas-extensions/issues/104)
+* feat: adding an optional `install` property to the code samples extension (#105) ([757de13](https://github.com/readmeio/oas-extensions/commit/757de13)), closes [#105](https://github.com/readmeio/oas-extensions/issues/105)
+* feat: requiring oas@19 ([64bfc16](https://github.com/readmeio/oas-extensions/commit/64bfc16))
+* build: 15.0.0 release ([3e61bf4](https://github.com/readmeio/oas-extensions/commit/3e61bf4))
+* fix: ci ([34603a7](https://github.com/readmeio/oas-extensions/commit/34603a7))
+
+
+
 ## 15.0.0 (2022-09-13)
 
 * feat: adding a new `metrics-enabled` extension (#104) ([9b75601](https://github.com/readmeio/oas-extensions/commit/9b75601)), closes [#104](https://github.com/readmeio/oas-extensions/issues/104)
