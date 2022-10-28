@@ -1,3 +1,10 @@
+## 17.0.0 (2022-10-28)
+
+* chore(deps-dev): bumping dev deps (#110) ([f07d34d](https://github.com/readmeio/oas-extensions/commit/f07d34d)), closes [#110](https://github.com/readmeio/oas-extensions/issues/110)
+* ci: running tests against node 19 ([2c164bb](https://github.com/readmeio/oas-extensions/commit/2c164bb))
+
+
+
 ## 16.0.0 (2022-10-10)
 
 * chore(deps-dev): bump @commitlint/cli from 17.0.3 to 17.1.2 (#99) ([27a903c](https://github.com/readmeio/oas-extensions/commit/27a903c)), closes [#99](https://github.com/readmeio/oas-extensions/issues/99)
