@@ -1,6 +1,10 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   # Running linting on Node 14 because of https://github.com/lo1tuma/eslint-plugin-mocha/issues/322
@@ -11,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
+          cache: npm
 
       - run: npm install -g npm@7
       - run: npm ci
@@ -33,6 +38,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: npm
 
       # Node 14 still ships with npm@6 so for compatibility reasons we're upping this.
       - name: Install npm@8
