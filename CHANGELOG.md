@@ -1,3 +1,23 @@
+## <small>17.0.1 (2022-12-01)</small>
+
+* chore(deps-dev): bump @commitlint/cli from 17.1.2 to 17.2.0 (#112) ([1f2ea71](https://github.com/readmeio/oas-extensions/commit/1f2ea71)), closes [#112](https://github.com/readmeio/oas-extensions/issues/112)
+* chore(deps-dev): bump @commitlint/cli from 17.2.0 to 17.3.0 (#115) ([2c42d1d](https://github.com/readmeio/oas-extensions/commit/2c42d1d)), closes [#115](https://github.com/readmeio/oas-extensions/issues/115)
+* chore(deps-dev): bump @commitlint/config-conventional (#113) ([3d0ec36](https://github.com/readmeio/oas-extensions/commit/3d0ec36)), closes [#113](https://github.com/readmeio/oas-extensions/issues/113)
+* chore(deps-dev): bump @commitlint/config-conventional (#118) ([56b8e20](https://github.com/readmeio/oas-extensions/commit/56b8e20)), closes [#118](https://github.com/readmeio/oas-extensions/issues/118)
+* chore(deps-dev): bump @readme/eslint-config from 10.1.1 to 10.2.0 (#122) ([e3e2d5f](https://github.com/readmeio/oas-extensions/commit/e3e2d5f)), closes [#122](https://github.com/readmeio/oas-extensions/issues/122)
+* chore(deps-dev): bump @readme/oas-examples from 5.7.1 to 5.8.0 (#114) ([23fb061](https://github.com/readmeio/oas-extensions/commit/23fb061)), closes [#114](https://github.com/readmeio/oas-extensions/issues/114)
+* chore(deps-dev): bump @readme/oas-examples from 5.8.0 to 5.9.0 (#119) ([dffe98f](https://github.com/readmeio/oas-extensions/commit/dffe98f)), closes [#119](https://github.com/readmeio/oas-extensions/issues/119)
+* chore(deps-dev): bump @types/mocha from 10.0.0 to 10.0.1 (#123) ([3778c01](https://github.com/readmeio/oas-extensions/commit/3778c01)), closes [#123](https://github.com/readmeio/oas-extensions/issues/123)
+* chore(deps-dev): bump chai from 4.3.6 to 4.3.7 (#121) ([1ab2bd6](https://github.com/readmeio/oas-extensions/commit/1ab2bd6)), closes [#121](https://github.com/readmeio/oas-extensions/issues/121)
+* chore(deps-dev): bump eslint from 8.26.0 to 8.28.0 (#124) ([2d101fa](https://github.com/readmeio/oas-extensions/commit/2d101fa)), closes [#124](https://github.com/readmeio/oas-extensions/issues/124)
+* chore(deps-dev): bump husky from 8.0.1 to 8.0.2 (#117) ([a8ebfdb](https://github.com/readmeio/oas-extensions/commit/a8ebfdb)), closes [#117](https://github.com/readmeio/oas-extensions/issues/117)
+* chore(deps-dev): bump prettier from 2.7.1 to 2.8.0 (#120) ([65a426b](https://github.com/readmeio/oas-extensions/commit/65a426b)), closes [#120](https://github.com/readmeio/oas-extensions/issues/120)
+* chore(deps-dev): bump typescript from 4.8.4 to 4.9.3 (#116) ([5afb82e](https://github.com/readmeio/oas-extensions/commit/5afb82e)), closes [#116](https://github.com/readmeio/oas-extensions/issues/116)
+* chore(deps): bump actions/checkout from 3.0.2 to 3.1.0 (#111) ([62d03ba](https://github.com/readmeio/oas-extensions/commit/62d03ba)), closes [#111](https://github.com/readmeio/oas-extensions/issues/111)
+* ci: dep caching ([e5673aa](https://github.com/readmeio/oas-extensions/commit/e5673aa))
+
+
+
 ## 17.0.0 (2022-10-28)
 
 * chore(deps-dev): bumping dev deps (#110) ([f07d34d](https://github.com/readmeio/oas-extensions/commit/f07d34d)), closes [#110](https://github.com/readmeio/oas-extensions/issues/110)
