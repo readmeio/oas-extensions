@@ -13,7 +13,7 @@ export const SIMPLE_MODE = 'simple-mode';
 
 // Make sure you document any changes on here:
 // https://docs.readme.com/docs/openapi-extensions
-export type Extensions = {
+export interface Extensions {
   [CODE_SAMPLES]: {
     language: string;
     code: string;
@@ -28,7 +28,7 @@ export type Extensions = {
   [SAMPLES_LANGUAGES]: string[];
   [SEND_DEFAULTS]: boolean; // @deprecated
   [SIMPLE_MODE]: boolean;
-};
+}
 
 export const defaults: Extensions = {
   [CODE_SAMPLES]: undefined,
