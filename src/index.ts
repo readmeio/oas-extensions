@@ -15,10 +15,10 @@ export const SIMPLE_MODE = 'simple-mode';
 // https://docs.readme.com/docs/openapi-extensions
 export interface Extensions {
   [CODE_SAMPLES]: {
-    language: string;
     code: string;
-    name?: string;
     install?: string;
+    language: string;
+    name?: string;
   };
   [EXPLORER_ENABLED]: boolean;
   [HEADERS]: Record<string, string | number>[];
