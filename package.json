@@ -4,8 +4,17 @@
   "version": "17.0.1",
   "author": "Jon Ursenbach <jon@readme.io>",
   "license": "ISC",
+  "sideEffects": false,
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/readmeio/oas-extensions.git"
@@ -14,7 +23,7 @@
     "node": ">=16"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "lint": "eslint . --ext .js,.ts",
     "prebuild": "rm -rf dist/",
     "prepack": "npm run build",
@@ -36,6 +45,7 @@
     "eslint": "^8.48.0",
     "husky": "^8.0.3",
     "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.3"
   },
