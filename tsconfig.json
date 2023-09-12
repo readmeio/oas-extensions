@@ -4,8 +4,8 @@
     "baseUrl": "./src/",
     "declaration": true,
     "esModuleInterop": true,
-    "lib": ["DOM", "ES2020"],
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "noImplicitAny": true,
     "outDir": "./dist",
     "target": "ES2020"
