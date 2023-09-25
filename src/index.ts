@@ -1,5 +1,5 @@
-// eslint-disable-next-line import/no-named-default
-import type { default as Oas, Operation } from 'oas';
+import type Oas from 'oas';
+import type Operation from 'oas/operation';
 
 export const CODE_SAMPLES = 'code-samples';
 export const EXPLORER_ENABLED = 'explorer-enabled';
