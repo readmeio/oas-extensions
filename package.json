@@ -37,7 +37,7 @@
     "test": "vitest run --coverage"
   },
   "peerDependencies": {
-    "oas": "^21.0.0"
+    "oas": "^22.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
