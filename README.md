@@ -1,3 +1,7 @@
+> **Warning**
+>
+> `@readme/oas-extensions` has moved! The source for this library now lives at https://github.com/readmeio/oas.
+ 
 # @readme/oas-extensions
 
 A list of extensions that ReadMe has added to extend the OpenAPI Specification.
